@@ -6,7 +6,7 @@ int main()
 	cout << "Enter number"<< endl;
 	cin >> n;
 	int p=0, t=9, s=0;
-	for (int i = 1; n / 10 >= 1; i++)
+	for (int i = 1; (double) n / 10 >= 0.1; i++)
 	{
 		if ((n % 10) < t)
 			t = n % 10;
@@ -15,7 +15,7 @@ int main()
 		n /= 10;
 		s ++;
 	}
-	cout << " number of digits = " << s+1;
+	cout << " number of digits = " << s;
 	cout <<" max = " << p;
 	cout << " min =  " << t;
 		system("pause");
