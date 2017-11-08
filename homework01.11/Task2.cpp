@@ -8,7 +8,7 @@ int main()
 	cout << "Enter number";
 	cin >> n;
 	cout << counter(n);
-	return (0);
+	system ("pause");
 }
 int counter(int n)
 {
