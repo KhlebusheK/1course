@@ -1,8 +1,11 @@
 /*#include <iostream>
+
 using namespace std;
+
 void enterArray(int array[], int n);
 void typeOfNumber(int less, int more, int equal);
 void counter(int array[], int n, int& less, int& more, int& equal);
+
 int main()
 {
 	int array[] = { 0 }, n;

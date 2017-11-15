@@ -1,5 +1,7 @@
 /*#include <iostream>
+
 using namespace std;
+
 void enterArray(int array[], int n);
 void counter(int array[], int n, int&neg, int&pos, int&zero);
 

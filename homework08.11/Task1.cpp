@@ -1,9 +1,12 @@
-#include <iostream>
+/*#include <iostream>
+
 using namespace std;
+
 void enterArray(int array[], int n);
 void displayArray(int array[], int n);
 void sorting(int array[], int n);
 void swap(int&a, int&b);
+
 int main()
 {
 	int array[] = { 0 }, n;
@@ -51,4 +54,4 @@ void swap(int&a, int&b)
 	int t = a;
 	a = b;
 	b = t;
-}
+}*/
