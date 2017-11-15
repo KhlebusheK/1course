@@ -38,16 +38,16 @@ int counter(int array[], int n, int p)
 }
 void trueFalse ( int array [], int n, bool m)
 {
-bool m = nonDecreasing(array, n);
-if (m)
-{
-int p;
-cout << " Enter a certain number ";
-cin >> p;
-cout << counter(array, n, p) << endl;
-}
-else
-cout << "Try again";
+	m = nonDecreasing(array, n);
+		if (m)
+		{
+			int p;
+			cout << " Enter a certain number ";
+			cin >> p;
+			cout << counter(array, n, p) << endl;
+		}
+		else
+			cout << "Try again";
 }
 bool nonDecreasing(int array[], int n)
 {
