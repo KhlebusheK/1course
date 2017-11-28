@@ -1,11 +1,16 @@
 #include <iostream>
+
 using namespace std;
+
 int main()
 { 
 	int n;
+
 	cout << "Enter number"<< endl;
 	cin >> n;
+
 	int p=0, t=9, s=0;
+
 	for (int i = 1; (double) n / 10 >= 0.1; i++)
 	{
 		if ((n % 10) < t)
@@ -15,8 +20,10 @@ int main()
 		n /= 10;
 		s ++;
 	}
+
 	cout << " number of digits = " << s;
 	cout <<" max = " << p;
 	cout << " min =  " << t;
+
 		system("pause");
 }
