@@ -113,7 +113,7 @@ void chekByOrder(int array[], int n)
 			m++;
 		}
 	}
-	for (i=0; i < n; i++, m++)
+	for (i=0; i < n; i++)
 	{
 		if (array[i] > 0) 
 		{
