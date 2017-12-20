@@ -18,6 +18,9 @@ void swap(int& a, int& b);
 void sq(int matrix[][N], int n, int );
 void round(int matrix[][N], int n, int);
 int max(int matrix[][N], int n, int m);
+void sortByMaxElem(int matrix[][N], int n, int m);
+void sortByAscending(int matrix[][N], int n, int m);
+void symmetricallDisplay(int matrix[][N], int n, int m);
 
 
 
@@ -211,5 +214,39 @@ void swap(int& a, int& b)
 		}
 
 		return matrix[h][k];
+	}
+	void sortByMaxElem(int matrix[][N], int n, int m)
+	{
+		for (int i = 0; i < n; i++)
+		{
+			for (int j = m-1, k=0; j >= 0, k <= i; j--)
+			{
+				if (matrix[i][j] > matrix[i][j - 1])
+				{
+					swap(matrix[i][j], matrix[i][j - 1]);
+					k++;
+				}
+			}
+		}
+	}
+	void sortByAscending(int matrix[][N], int n, int m)
+	{
+		for (int i = 0; i < n; i++)
+		{
+			for (int j=i+1; j<m; j++)
+			{
+				if (matrix[i][j] < matrix[i][j + 1])swap(matrix[i][j], matrix[i][j + 1]);
+			}
+		}
+	}
+	void symmetricallDisplay(int matrix[][N], int n, int m)
+	{
+		for (int i = 0; i < n; i++)
+		{
+			for (int j = 0, k=0; j < m, k <=i; j++)
+			{
+				swap(matrix[i][j], matrix[j][m - n + i]);
+			}
+		}
 	}
 	
